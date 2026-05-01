@@ -1,15 +1,219 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="/src/style.css" rel="stylesheet">
     <title>onix</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <div id="header"></div>
-    <script type="module" src="/src/main.js"></script>
-        <script type="module" src="/src/index.js"></script>
-  </body>
+</head>
+<body class="font-serif bg-stone-100 ">
+<header class="p-4  sm:px-10 sticky top-0 left-0 w-full z-50 bg-stone-100 backdrop-blur-sm border-b border-gray-200">
+    <nav class=" border-gray-200 dark:bg-gray-900">
+        <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto ">
+
+            <div class="flex gap-2 md:gap-4 items-center">
+                <a href="#" class="flex items-center space-x-3">
+                    <span class="self-center text-2xl sm:text-4xl w-32 font-semibold whitespace-nowrap">Оникс</span>
+                </a>
+                <span class="text-2xl md:text-4xl text-olive-600 font-serif">мкр. ДУБРАВА</span>
+            </div>
+
+            <!-- Кнопка бургер - показывается ТОЛЬКО на экранах МЕНЬШЕ 1024px -->
+            <div class="flex lg:hidden">
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Открыть меню</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                         viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Меню - скрыто на экранах МЕНЬШЕ 1024px, показывается на 1024px и выше -->
+            <div class="hidden  text-lg w-full lg:flex lg:w-auto" id="navbar-sticky">
+                <ul class="flex absolute border-t border-t-gray-300 lg:border-none  w-full left-0 lg:static flex-col p-4 mt-4 font-medium  lg:flex-row  lg:mt-0 lg:p-0">
+                    <li><a href="#conception"
+                           class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-green-700">О
+                        проекте</a></li>
+                    <li><a href="#calculator"
+                           class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-green-700">Планировка</a>
+                    </li>
+                    <li><a href="#construction"
+                           class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-green-700">Ипотека</a>
+                    </li>
+                    <li><a href="#contacts"
+                           class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-green-700">Ход
+                        строительства</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="px-4 pt-18 pb-38  sm:px-10 bg-[url('/hero.png')] bg-cover bg-no-repeat" id="hero">
+        <div class="max-w-7xl mx-auto">
+            <div class="p-2 max-w-lg bg-gray-100/30  rounded-3xl">
+                <div class="py-6 px-9 bg-gray-100/70  rounded-3xl">
+                    <h1 class="text-4xl mb-2">Современная городская среда в окружении леса</h1>
+                    <p class="text-lg mb-2">Квартиры от 115 000 ₽/м² - 20 мин до центра города</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#calculator"
+                           class="bg-stone-100 hover:bg-stone-200 focus:ring-4 focus:ring-stone-300 font-medium rounded-lg text-lg px-6 py-3 text-center">Выбрать
+                            квартиру</a>
+                        <a href="#contacts"
+                           class="text-white bg-lime-800 hover:bg-lime-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-lg px-6 py-3 text-center">Расчитать
+                            ипотеку</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="advantages" class="p-4   bg-lime-800">
+        <div class="max-w-7xl mx-auto flex text-center justify-between flex-col items-center gap-4 lg:flex-row">
+            <div class="flex  items-end  min-w-88 lg:min-w-fit gap-8 lg:gap-2">
+                <div class="w-8 h-8 bg-white"></div>
+                <p class=" text-xl text-start text-stone-200">Разноэтажное строительство</p>
+            </div>
+            <div class="flex items-end  min-w-88 lg:min-w-fit gap-8 lg:gap-2">
+                <div class="w-8 h-8 bg-white"></div>
+                <p class=" text-xl text-start text-stone-200">Природа вокруг</p>
+            </div>
+            <div class="flex items-end  min-w-88 lg:min-w-fit gap-8 lg:gap-2">
+                <div class="w-8 h-8 bg-white"></div>
+                <p class=" text-xl text-stone-200">Разнообразные планировки</p>
+            </div>
+            <div class="flex items-end  min-w-88 lg:min-w-fit gap-8 lg:gap-2">
+                <div class="w-8 h-8 bg-white"></div>
+                <p class=" text-xl text-stone-200">Инфраструктура</p>
+            </div>
+        </div>
+    </section>
+    <section class="p-4" id="conception">
+        <div class="max-w-6xl mx-auto ">
+            <div class="flex justify-between gap-2">
+                <div class="py-10">
+                    <div class="flex gap-2 items-center">
+                        <div class="w-4 h-4 bg-green-200"></div>
+                        <p class="text-lime-700">КОНЦЕПЦИЯ</p>
+                    </div>
+                    <div class="max-w-md mb-4">
+                        <h2 class="text-lime-800 text-6xl mb-2">«Солнечный<br> город в городе»</h2>
+                        <p>Микрорайон «Дубрава» - современный жилой квартал в экологически чистом районе Репное,
+                            объединяющее комфорт городской среды и транспортную доступность в окружении леса.</p>
+                    </div>
+                    <div class="flex flex-1">
+                        <div class="flex items-start gap-2 ">
+                            <div class="w-10 h-10 rounded-full bg-stone-200  shrink-0"></div>
+                            <div>
+                                <h3 class=" text-lime-800">
+                                    Продуманная среда для жизни
+                                </h3>
+                                <p class="text-sm">Спортивные и детские площадки, прогулочные маршруты «Зеленая коса» и
+                                    «Белая река»,
+                                    торговый центр и благоустроенные дворы.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div class="w-10 h-10 rounded-full bg-stone-200  shrink-0"></div>
+                            <div>
+                                <h3 class=" text-lime-800">
+                                    Солнечная архитектура
+                                </h3>
+                                <p class="text-sm">Этажность и расположение домов продуманы с учетом рельефа и движения
+                                    солнца, чтобы в квартирах было больше естесственного света</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div class="w-10 h-10 rounded-full bg-stone-200  shrink-0"></div>
+                            <div>
+                                <h3 class=" text-lime-800">
+                                    Удобная транспортная доступность
+                                </h3>
+                                <p class="text-sm">Спортивные и детские площадки, прогулочные маршруты «Зеленая коса» и
+                                    «Белая река»,
+                                    торговый центр и благоустроенные дворы.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./src/assets/conception-main.png"
+                         class="object-cover object-center  h-full rounded-3xl"
+                         alt="">
+                </div>
+
+
+            </div>
+            <div class="flex gap-1 text-[10px] text-white">
+                <article class="h-86 flex-1 bg-[url('/hero.png')] px-1 pb-4 rounded-2xl pt-16 ">
+                    <h3 class="mb-2 font-bold">Соседство с лесом</h3>
+                    <p class="mb-2">Через микрорайон проходит
+                        «Зеленая коса» - единый
+                        прогулочный маршрут длиной
+                        более 2 км.</p>
+                    <p>
+                        Вы можете гулять, бегать, кататься
+                        на велосипеде — не выходя за
+                        пределы района.</p>
+                </article>
+                <article class="h-86 flex-1 bg-[url('/hero.png')] px-1 pb-4 rounded-2xl pt-16 ">
+                    <h3 class="mb-2 font-bold text-nowrap">Дворы и благоустройство</h3>
+                    <ul class="list-disc pl-5">
+                        <li>безопасные дворы без лишнего транспорта</li>
+                        <li>современные детские площадки</li>
+                        <li>зоны для отдыха и спорта</li>
+                        <li>45% территории - озеленение</li>
+                    </ul>
+                </article>
+                <article class="h-86 flex-1 bg-[url('/hero.png')] px-1 pb-4 rounded-2xl pt-16">
+                    <h3 class="mb-2 font-bold">Соседство с лесом</h3>
+                    <p class="mb-2">Через микрорайон проходит
+                        «Зеленая коса» - единый
+                        прогулочный маршрут длиной
+                        более 2 км.</p>
+                    <p>
+                        Вы можете гулять, бегать, кататься
+                        на велосипеде — не выходя за
+                        пределы района.</p>
+                </article>
+                <article class="h-86 flex-1 bg-[url('/hero.png')] px-1 pb-4 rounded-2xl pt-16">
+                    <h3 class="mb-2 font-bold">Архитектура</h3>
+                    <p class="mb-2">Современные жилые дома
+                        попеременной этажности
+                        (4-6-8 этажей) формируют
+                        уютную и живую среду.</p>
+                    <p>
+                        Расположение домов тщательно
+                        продуманно с учетом уклона и
+                        ориентированно на восток. Каждое
+                        утро здесь начинается со света.</p>
+                </article>
+                <article class="h-86 flex-1 bg-[url('/hero.png')] px-1 pb-4 rounded-2xl pt-16">
+                    <h3 class="mb-2 font-bold">Общественные места</h3>
+                    <p class="mb-2">"Белая река" - основная артерия
+                        микрорайона, объединяющая
+                        систему улицы и площадей в
+                        единое городское пространство</p>
+                    <p>
+                        Торцы и фасады домов, выходящие,
+                        на "Белую реку", имеют белый цвет,
+                        таким образом, дома и мощение
+                        образуют единое белоснежное
+                        пространство, контрастирующее с
+                        остальной архитектурой и
+                        окружением, выделяя главное.</p>
+                </article>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<script type="module" src="/src/index.js"></script>
+</body>
 </html>
