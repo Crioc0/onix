@@ -58,7 +58,6 @@
     </nav>
 </header>
 <main>
-    <!-- ========== HERO: без изменений, добавлен только max-w-full для контейнера ========= -->
     <section class="px-4 pt-18 pb-38 sm:px-10 bg-[url('/hero.png')] bg-cover bg-no-repeat bg-center" id="hero">
         <div class="max-w-7xl mx-auto">
             <div class="p-2 max-w-lg bg-gray-100/30 rounded-3xl">
@@ -78,24 +77,23 @@
         </div>
     </section>
 
-    <!-- ========== ADVANTAGES: flex-wrap чтобы не вылезало за край, остальное оригинал ========= -->
     <section id="advantages" class="p-4 bg-lime-800">
-        <div class="max-w-7xl mx-auto flex flex-wrap text-center justify-center items-center gap-6 lg:flex-nowrap lg:justify-between">
-            <div class="flex items-center gap-8 lg:gap-2 min-w-50 lg:min-w-fit">
+        <div class="max-w-full sm:max-w-11/12 lg:max-w-7xl  mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 gap-x-24 lg:gap-2">
+            <div class="flex items-center gap-8 lg:gap-2 sm:justify-start lg:justify-center">
                 <div class="w-8 h-8 bg-white shrink-0"></div>
-                <p class="text-xl text-start text-stone-200">Разноэтажное строительство</p>
+                <p class="text-xl text-start text-nowrap text-stone-200">Разноэтажное строительство</p>
             </div>
-            <div class="flex items-center gap-8 lg:gap-2 min-w-50 lg:min-w-fit">
+            <div class="flex items-center gap-8 lg:gap-2 sm:justify-start lg:justify-center">
                 <div class="w-8 h-8 bg-white shrink-0"></div>
-                <p class="text-xl text-start text-stone-200">Природа вокруг</p>
+                <p class="text-xl text-start text-nowrap text-stone-200">Природа вокруг</p>
             </div>
-            <div class="flex items-center gap-8 lg:gap-2 min-w-50 lg:min-w-fit">
+            <div class="flex items-center gap-8 lg:gap-2 sm:justify-start lg:justify-center">
                 <div class="w-8 h-8 bg-white shrink-0"></div>
-                <p class="text-xl text-stone-200">Разнообразные планировки</p>
+                <p class="text-xl text-start text-nowrap text-stone-200">Разнообразные планировки</p>
             </div>
-            <div class="flex items-center gap-8 lg:gap-2 min-w-50 lg:min-w-fit">
+            <div class="flex items-center gap-8 lg:gap-2 sm:justify-start lg:justify-center">
                 <div class="w-8 h-8 bg-white shrink-0"></div>
-                <p class="text-xl text-stone-200">Инфраструктура</p>
+                <p class="text-xl text-start text-nowrap text-stone-200">Инфраструктура</p>
             </div>
         </div>
     </section>
@@ -103,7 +101,6 @@
 
     <section class="p-4" id="conception">
         <div class="max-w-6xl mx-auto">
-            <!-- левая и правая часть: сохраняем flex, лишь бы не схлопывалось -->
             <div class="flex flex-col lg:flex-row justify-between gap-6 pb-4">
                 <div class="py-6 lg:py-10">
                     <div class="flex gap-2 items-center">
@@ -150,7 +147,6 @@
                 </div>
             </div>
 
-            <!-- 5 карточек - на мобильных переносим через grid, но фоны и верстка оригинальные -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 place-items-stretch lg:place-items-stretch gap-3 text-sm text-white mt-4">
                 <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 min-h-60">
                     <h3 class="mb-2 font-bold">Соседство с лесом</h3>
@@ -192,7 +188,6 @@
         </div>
     </section>
 
-    <!-- ========== CONSTRUCTION: только flex-wrap для карточек и убран жесткий px-32 ========= -->
     <section id="construction" class="mt-10 px-4">
         <div class="max-w-4xl mx-auto">
             <div class="flex flex-col items-center justify-between mb-4 text-center">
@@ -201,7 +196,6 @@
                 <p class="text-lg text-center">Мы создали пространства, где комфорт, природа и современные решения
                     формируют идеальные условия для жизни вашей семьи</p>
             </div>
-            <!-- карточки: оригинал, но с flex-col на мобильных -->
             <div class="flex flex-col md:flex-row justify-between gap-6 md:gap-10 mb-12">
                 <div class="flex-1 pt-40 pb-2 bg-[url('/hero.png')] bg-cover bg-center rounded-2xl">
                     <div class="flex pl-2 pr-4 items-center text-white justify-between flex-wrap">
@@ -224,7 +218,6 @@
                     </div>
                 </div>
             </div>
-            <!-- вместо px-32 делаем px-6 md:px-16, чтобы на планшетах не разрывалось -->
             <div class="px-6 md:px-16 lg:px-32 py-4 bg-stone-200 border-2 border-gray-300 rounded-xl mb-4">
                 <div class="max-w-xl text-stone-700">
                     <h3 class="mb-2 text-xl font-semibold">Цены указаны для квартир без отделки</h3>
@@ -241,69 +234,102 @@
             </div>
         </div>
     </section>
-    <section id="calculator" class="mt-20 bg-[url('/hero.png')] bg-cover pt-24">
-        <div class="pt-6 max-w-6xl mx-auto px-10  bg-stone-100 rounded-xl">
-            <h2 class="text-lime-800 text-center   text-5xl mb-2">Ипотечный калькулятор</h2>
-            <p class="text-lime-800 text-center mb-8">Рассчитайте комфортный платеж по ипотеке на вашу будущую
+    <section id="calculator" class="mt-20 px-2 bg-[url('/hero.png')] bg-cover py-12 sm:py-16 md:py-24">
+        <div class="py-4 sm:py-6 max-w-3xl lg:max-w-6xl w-full mx-auto px-4 sm:px-6 md:px-10 bg-stone-100 rounded-xl">
+            <h2 class="text-lime-800 text-center text-3xl sm:text-4xl md:text-5xl mb-2">Ипотечный калькулятор</h2>
+            <p class="text-lime-800 text-center mb-6 sm:mb-8 text-sm sm:text-base">Рассчитайте комфортный платеж по ипотеке на вашу будущую
                 квартиру</p>
 
-            <div class="flex">
-                <div>
-                    <div class="flex gap-4 mb-8">
+            <div class="flex gap-6 md:gap-8 flex-wrap justify-center">
+                <div class="flex-1 min-w-70">
+                    <div class="flex flex-col sm:flex-col gap-4 mb-8">
                         <button
-                                class="text-white bg-lime-800 hover:bg-lime-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-2xl text-lg px-6 py-2 min-w-64">
+                                class="text-white bg-lime-800 hover:bg-lime-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-2xl text-base sm:text-lg px-4 sm:px-6 py-2 min-w-45 sm:min-w-64 lg:min-w">
                             Льготная - 5,9%
                         </button>
                         <button
-                                class="bg-stone-100 hover:bg-stone-200 focus:ring-4  border-2 border-gray-300 focus:ring-stone-300 font-medium rounded-2xl text-lg px-6 py-2 text-center min-w-64">
-                            Льготная - 5,9%
+                                class="bg-stone-100 hover:bg-stone-200 focus:ring-4 border-2 border-gray-300 focus:ring-stone-300 font-medium rounded-2xl text-base sm:text-lg px-4 sm:px-6 py-2 text-center min-w-45 sm:min-w-64">
+                            Стандартная - 7,5%
                         </button>
                     </div>
 
-                    <div class="relative mb-10">
-                        <div class="flex text-stone-800 justify-between">
-                            <p class="text-lg">Стоимость квартиры</p>
-                            <span class="text-2xl font-bold">3 800 000</span>
+                    <div class="relative mb-8">
+                        <div class="flex text-stone-800 justify-between flex-wrap gap-2">
+                            <p class="text-base sm:text-lg">Стоимость квартиры</p>
+                            <span class="text-xl sm:text-2xl font-bold">3 800 000 ₽</span>
                         </div>
-                        <label for="costRange" class="block mb-1 text-sm font-medium text-stone-400">Выберите
+                        <label for="costRange" class="block mb-1 text-xs sm:text-sm font-medium text-stone-400">Выберите
                             стоимость недвижимости</label>
                         <input type="range" id="costRange"
                                min="1000000" max="15000000" step="100000" value="7500000"
-                               class="range-custom w-full h-2 bg-stone-500 rounded-lg appearance-none cursor-pointer accent-olive-600">
-                        <span class="text-sm  absolute inset-s-0 -bottom-6 text-stone-400">1 000 000 ₽</span>
-                        <span class="text-sm  absolute inset-e-0 -bottom-6 text-stone-400">15 000 000 ₽</span>
-                    </div>
-                    <div class="relative mb-10">
-                        <div class="flex text-stone-800 justify-between">
-                            <p class="text-lg">Первоначальный взнос</p>
-                            <span class="text-2xl font-bold">760 000 ₽ (20%)</span>
+                               class="range-custom w-full h-2 bg-stone-500 rounded-lg appearance-none cursor-pointer accent-lime-700">
+                        <div class="flex justify-between text-xs sm:text-sm text-stone-400 mt-1">
+                            <span>1 000 000 ₽</span>
+                            <span>15 000 000 ₽</span>
                         </div>
-                        <label for="initialPaymentRange" class="block mb-1 text-sm font-medium text-stone-400">От 10% до
+                    </div>
+
+                    <div class="relative mb-8">
+                        <div class="flex text-stone-800 justify-between flex-wrap gap-2">
+                            <p class="text-base sm:text-lg">Первоначальный взнос</p>
+                            <span class="text-xl sm:text-2xl font-bold">760 000 ₽ (20%)</span>
+                        </div>
+                        <label for="initialPaymentRange" class="block mb-1 text-xs sm:text-sm font-medium text-stone-400">От 10% до
                             50% стоимости квартиры</label>
                         <input type="range" id="initialPaymentRange"
                                min="10" max="50" step="1" value="20"
-                               class="range-custom w-full h-2 bg-stone-500 rounded-lg appearance-none cursor-pointer accent-olive-600">
-                        <span class="text-sm  absolute inset-s-0 -bottom-6 text-stone-400">10%</span>
-                        <span class="text-sm  absolute inset-e-0 -bottom-6 text-stone-400">50%</span>
-                    </div>
-                    <div class="relative mb-10">
-                        <div class="flex text-stone-800 justify-between">
-                            <p class="text-lg">Срок ипотеки</p>
-                            <span class="text-2xl font-bold">20 лет</span>
+                               class="range-custom w-full h-2 bg-stone-500 rounded-lg appearance-none cursor-pointer accent-lime-700">
+                        <div class="flex justify-between text-xs sm:text-sm text-stone-400 mt-1">
+                            <span>10%</span>
+                            <span>50%</span>
                         </div>
-                        <label for="creditTermRange" class="block mb-1 text-sm font-medium text-stone-400">Выберите срок
+                    </div>
+
+                    <div class="relative mb-8">
+                        <div class="flex text-stone-800 justify-between flex-wrap gap-2">
+                            <p class="text-base sm:text-lg">Срок ипотеки</p>
+                            <span class="text-xl sm:text-2xl font-bold">20 лет</span>
+                        </div>
+                        <label for="creditTermRange" class="block mb-1 text-xs sm:text-sm font-medium text-stone-400">Выберите срок
                             кредитования</label>
                         <input type="range" id="creditTermRange"
                                min="5" max="30" step="1" value="20"
-                               class="range-custom w-full h-2 bg-stone-500 rounded-lg appearance-none cursor-pointer accent-olive-600">
-                        <span class="text-sm  absolute inset-s-0 -bottom-6 text-stone-400">5 лет</span>
-                        <span class="text-sm  absolute inset-e-0 -bottom-6 text-stone-400">30 лет</span>
+                               class="range-custom w-full h-2 bg-stone-500 rounded-lg appearance-none cursor-pointer accent-lime-700">
+                        <div class="flex justify-between text-xs sm:text-sm text-stone-400 mt-1">
+                            <span>5 лет</span>
+                            <span>30 лет</span>
+                        </div>
                     </div>
-
-
                 </div>
 
-
+                <div class="flex-1 min-w-70 flex justify-end sm:justify-center items-center w-full flex-col pb-4">
+                    <p class="mb-2 text-base sm:text-xl text-center">Ежемесячный платеж</p>
+                    <p class="mb-2 text-4xl sm:text-5xl md:text-6xl font-bold text-lime-800">21 604 ₽</p>
+                    <div class="rounded-2xl bg-stone-200 border border-stone-300 text-stone-600 px-3 py-1 mb-4 text-sm sm:text-base text-center">Комфортный
+                        платеж при ставке 5,9%
+                    </div>
+                    <div class="flex flex-col sm:flex-row justify-around w-full gap-4 mb-4">
+                        <div class="flex items-center gap-2 justify-center sm:justify-start">
+                            <div class="w-8 h-8 sm:w-10 sm:h-10 bg-stone-200 rounded-full shrink-0"></div>
+                            <div>
+                                <div class="text-stone-400 text-xs sm:text-sm">Сумма кредита</div>
+                                <div class="text-xl sm:text-2xl font-semibold">3 040 000 ₽</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 justify-center sm:justify-start">
+                            <div class="w-8 h-8 sm:w-10 sm:h-10 bg-stone-200 rounded-full shrink-0"></div>
+                            <div>
+                                <div class="text-stone-400 text-xs sm:text-sm">Ставка</div>
+                                <div class="text-xl sm:text-2xl font-semibold">5,9 %</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                            class="text-white w-full mb-3 bg-lime-800 hover:bg-lime-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-base sm:text-lg px-6 py-3 flex justify-center items-center gap-2 transition">
+                        Связаться с менеджером
+                    </button>
+                    <p class="text-[11px] sm:text-[12px] text-stone-400 text-center">Мы поможем подобрать оптимальную программу и ответим на все вопросы</p>
+                </div>
             </div>
         </div>
     </section>
