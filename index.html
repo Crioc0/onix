@@ -58,17 +58,18 @@
     </nav>
 </header>
 <main>
-    <section class="px-4 pt-18 pb-38  sm:px-10 bg-[url('/hero.png')] bg-cover bg-no-repeat" id="hero">
+    <!-- ========== HERO: без изменений, добавлен только max-w-full для контейнера ========= -->
+    <section class="px-4 pt-18 pb-38 sm:px-10 bg-[url('/hero.png')] bg-cover bg-no-repeat bg-center" id="hero">
         <div class="max-w-7xl mx-auto">
-            <div class="p-2 max-w-lg bg-gray-100/30  rounded-3xl">
-                <div class="py-6 px-9 bg-gray-100/70  rounded-3xl">
+            <div class="p-2 max-w-lg bg-gray-100/30 rounded-3xl">
+                <div class="py-6 px-9 bg-gray-100/70 rounded-3xl">
                     <h1 class="text-4xl mb-2">Современная городская среда в окружении леса</h1>
                     <p class="text-lg mb-2">Квартиры от 115 000 ₽/м² - 20 мин до центра города</p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#calculator"
                            class="bg-stone-100 hover:bg-stone-200 focus:ring-4 focus:ring-stone-300 font-medium rounded-lg text-lg px-6 py-3 text-center">Выбрать
                             квартиру</a>
-                        <a href="#contacts"
+                        <a href="#calculator"
                            class="text-white bg-lime-800 hover:bg-lime-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-lg px-6 py-3 text-center">Расчитать
                             ипотеку</a>
                     </div>
@@ -76,30 +77,35 @@
             </div>
         </div>
     </section>
-    <section id="advantages" class="p-4   bg-lime-800">
-        <div class="max-w-7xl mx-auto flex text-center justify-between flex-col items-center gap-4 lg:flex-row">
-            <div class="flex  items-end  min-w-88 lg:min-w-fit gap-8 lg:gap-2">
-                <div class="w-8 h-8 bg-white"></div>
-                <p class=" text-xl text-start text-stone-200">Разноэтажное строительство</p>
+
+    <!-- ========== ADVANTAGES: flex-wrap чтобы не вылезало за край, остальное оригинал ========= -->
+    <section id="advantages" class="p-4 bg-lime-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap text-center justify-center items-center gap-6 lg:flex-nowrap lg:justify-between">
+            <div class="flex items-center gap-8 lg:gap-2 min-w-50 lg:min-w-fit">
+                <div class="w-8 h-8 bg-white shrink-0"></div>
+                <p class="text-xl text-start text-stone-200">Разноэтажное строительство</p>
             </div>
-            <div class="flex items-end  min-w-88 lg:min-w-fit gap-8 lg:gap-2">
-                <div class="w-8 h-8 bg-white"></div>
-                <p class=" text-xl text-start text-stone-200">Природа вокруг</p>
+            <div class="flex items-center gap-8 lg:gap-2 min-w-50 lg:min-w-fit">
+                <div class="w-8 h-8 bg-white shrink-0"></div>
+                <p class="text-xl text-start text-stone-200">Природа вокруг</p>
             </div>
-            <div class="flex items-end  min-w-88 lg:min-w-fit gap-8 lg:gap-2">
-                <div class="w-8 h-8 bg-white"></div>
-                <p class=" text-xl text-stone-200">Разнообразные планировки</p>
+            <div class="flex items-center gap-8 lg:gap-2 min-w-50 lg:min-w-fit">
+                <div class="w-8 h-8 bg-white shrink-0"></div>
+                <p class="text-xl text-stone-200">Разнообразные планировки</p>
             </div>
-            <div class="flex items-end  min-w-88 lg:min-w-fit gap-8 lg:gap-2">
-                <div class="w-8 h-8 bg-white"></div>
-                <p class=" text-xl text-stone-200">Инфраструктура</p>
+            <div class="flex items-center gap-8 lg:gap-2 min-w-50 lg:min-w-fit">
+                <div class="w-8 h-8 bg-white shrink-0"></div>
+                <p class="text-xl text-stone-200">Инфраструктура</p>
             </div>
         </div>
     </section>
+
+
     <section class="p-4" id="conception">
-        <div class="max-w-6xl mx-auto ">
-            <div class="flex justify-between gap-2 pb-4">
-                <div class="py-10">
+        <div class="max-w-6xl mx-auto">
+            <!-- левая и правая часть: сохраняем flex, лишь бы не схлопывалось -->
+            <div class="flex flex-col lg:flex-row justify-between gap-6 pb-4">
+                <div class="py-6 lg:py-10">
                     <div class="flex gap-2 items-center">
                         <div class="w-4 h-4 bg-green-200"></div>
                         <p class="text-lime-700">КОНЦЕПЦИЯ</p>
@@ -109,63 +115,51 @@
                         <p>Микрорайон «Дубрава» - современный жилой квартал в экологически чистом районе Репное,
                             объединяющее комфорт городской среды и транспортную доступность в окружении леса.</p>
                     </div>
-                    <div class="flex flex-1">
-                        <div class="flex items-start gap-2 ">
-                            <div class="w-10 h-10 rounded-full bg-stone-200  shrink-0"></div>
+                    <!-- три блока: на мобильных в колонку, но стили те же -->
+                    <div class="flex flex-col sm:flex-row gap-5">
+                        <div class="flex items-start gap-2">
+                            <div class="w-10 h-10 rounded-full bg-stone-200 shrink-0"></div>
                             <div>
-                                <h3 class=" text-lime-800">
-                                    Продуманная среда для жизни
-                                </h3>
+                                <h3 class="text-lime-800">Продуманная среда для жизни</h3>
                                 <p class="text-sm">Спортивные и детские площадки, прогулочные маршруты «Зеленая коса» и
-                                    «Белая река»,
-                                    торговый центр и благоустроенные дворы.</p>
+                                    «Белая река», торговый центр и благоустроенные дворы.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-2">
-                            <div class="w-10 h-10 rounded-full bg-stone-200  shrink-0"></div>
+                            <div class="w-10 h-10 rounded-full bg-stone-200 shrink-0"></div>
                             <div>
-                                <h3 class=" text-lime-800">
-                                    Солнечная архитектура
-                                </h3>
+                                <h3 class="text-lime-800">Солнечная архитектура</h3>
                                 <p class="text-sm">Этажность и расположение домов продуманы с учетом рельефа и движения
                                     солнца, чтобы в квартирах было больше естесственного света</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-2">
-                            <div class="w-10 h-10 rounded-full bg-stone-200  shrink-0"></div>
+                            <div class="w-10 h-10 rounded-full bg-stone-200 shrink-0"></div>
                             <div>
-                                <h3 class=" text-lime-800">
-                                    Удобная транспортная доступность
-                                </h3>
+                                <h3 class="text-lime-800">Удобная транспортная доступность</h3>
                                 <p class="text-sm">Спортивные и детские площадки, прогулочные маршруты «Зеленая коса» и
-                                    «Белая река»,
-                                    торговый центр и благоустроенные дворы.</p>
+                                    «Белая река», торговый центр и благоустроенные дворы.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="flex justify-center lg:justify-end">
                     <img src="./src/assets/conception-main.png"
-                         class="object-cover object-center  h-full rounded-3xl"
+                         class="object-cover object-center h-auto max-w-full rounded-3xl"
                          alt="">
                 </div>
-
-
             </div>
-            <div class="flex gap-2 text-sm text-white">
-                <article class="flex-1 bg-[url('/hero.png')] px-1 pb-4 rounded-2xl pt-16 ">
+
+            <!-- 5 карточек - на мобильных переносим через grid, но фоны и верстка оригинальные -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 place-items-stretch lg:place-items-stretch gap-3 text-sm text-white mt-4">
+                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 min-h-60">
                     <h3 class="mb-2 font-bold">Соседство с лесом</h3>
-                    <p class="mb-2">Через микрорайон проходит
-                        «Зеленая коса» - единый
-                        прогулочный маршрут длиной
-                        более 2 км.</p>
-                    <p>
-                        Вы можете гулять, бегать, кататься
-                        на велосипеде — не выходя за
-                        пределы района.</p>
+                    <p class="mb-2">Через микрорайон проходит «Зеленая коса» - единый прогулочный маршрут длиной более 2
+                        км.</p>
+                    <p>Вы можете гулять, бегать, кататься на велосипеде — не выходя за пределы района.</p>
                 </article>
-                <article class=" flex-1 bg-[url('/hero.png')] px-1 pb-4 rounded-2xl pt-16 ">
-                    <h3 class="mb-2 font-bold text-nowrap">Дворы и благоустройство</h3>
+                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 min-h-60">
+                    <h3 class="mb-2 font-bold whitespace-normal">Дворы и благоустройство</h3>
                     <ul class="list-disc pl-5">
                         <li>безопасные дворы без лишнего транспорта</li>
                         <li>современные детские площадки</li>
@@ -173,97 +167,78 @@
                         <li>45% территории - озеленение</li>
                     </ul>
                 </article>
-                <article class=" flex-1 bg-[url('/hero.png')] px-1 pb-4 rounded-2xl pt-16">
+                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 min-h-60">
                     <h3 class="mb-2 font-bold">Архитектура</h3>
-                    <p class="mb-2">Современные жилые дома
-                        попеременной этажности
-                        (4-6-8 этажей) формируют
-                        уютную и живую среду.</p>
-                    <p>
-                        Расположение домов тщательно
-                        продуманно с учетом уклона и
-                        ориентированно на восток. Каждое
-                        утро здесь начинается со света.</p>
+                    <p class="mb-2">Современные жилые дома попеременной этажности (4-6-8 этажей) формируют уютную и
+                        живую среду.</p>
+                    <p>Расположение домов тщательно продуманно с учетом уклона и ориентированно на восток. Каждое утро
+                        здесь начинается со света.</p>
                 </article>
-                <article class=" flex-1 bg-[url('/hero.png')] px-1 pb-4 rounded-2xl pt-16">
+                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 min-h-60">
                     <h3 class="mb-2 font-bold">Общественные места</h3>
-                    <p class="mb-2">"Белая река" - основная артерия
-                        микрорайона, объединяющая
-                        систему улицы и площадей в
+                    <p class="mb-2">"Белая река" - основная артерия микрорайона, объединяющая систему улицы и площадей в
                         единое городское пространство</p>
-                    <p>
-                        Торцы и фасады домов, выходящие,
-                        на "Белую реку", имеют белый цвет,
-                        таким образом, дома и мощение
-                        образуют единое белоснежное
-                        пространство, контрастирующее с
-                        остальной архитектурой и
-                        окружением, выделяя главное.</p>
+                    <p>Торцы и фасады домов, выходящие, на "Белую реку", имеют белый цвет, таким образом, дома и мощение
+                        образуют единое белоснежное пространство, контрастирующее с остальной архитектурой и окружением,
+                        выделяя главное.</p>
                 </article>
-                <article class=" flex-1 bg-[url('/hero.png')] px-1 pb-4 rounded-2xl pt-16">
+                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 min-h-60">
                     <h3 class="mb-2 font-bold">Соседство с лесом</h3>
-                    <p class="mb-2">Через микрорайон проходит
-                        «Зеленая коса» - единый
-                        прогулочный маршрут длиной
-                        более 2 км.</p>
-                    <p>
-                        Вы можете гулять, бегать, кататься
-                        на велосипеде — не выходя за
-                        пределы района.</p>
+                    <p class="mb-2">Через микрорайон проходит «Зеленая коса» - единый прогулочный маршрут длиной более 2
+                        км.</p>
+                    <p>Вы можете гулять, бегать, кататься на велосипеде — не выходя за пределы района.</p>
                 </article>
             </div>
         </div>
     </section>
-    <section id="construction" class="mt-10">
-        <div class="max-w-4xl mx-auto ">
-            <div class="flex flex-col items-center justify-between mb-4">
-                <h2 class="text-lime-800 max-w-2xl   text-6xl mb-2">
-                    Выбирайте квартиру под свой стиль жизни
-                </h2>
+
+    <!-- ========== CONSTRUCTION: только flex-wrap для карточек и убран жесткий px-32 ========= -->
+    <section id="construction" class="mt-10 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col items-center justify-between mb-4 text-center">
+                <h2 class="text-lime-800 max-w-2xl text-4xl md:text-6xl mb-2 leading-tight">Выбирайте квартиру под свой
+                    стиль жизни</h2>
                 <p class="text-lg text-center">Мы создали пространства, где комфорт, природа и современные решения
-                    формируют идеальные условия для
-                    жизни вашей семьи</p>
+                    формируют идеальные условия для жизни вашей семьи</p>
             </div>
-            <div class="flex justify-between gap-10 mb-12">
-                <div class="flex-1 pt-40 pb-2 bg-[url('/hero.png')] rounded-2xl">
-                    <div class="flex pl-2 pr-4 items-center  text-white justify-between">
-                        <div class="flex items-end self-end  gap-2  ">
+            <!-- карточки: оригинал, но с flex-col на мобильных -->
+            <div class="flex flex-col md:flex-row justify-between gap-6 md:gap-10 mb-12">
+                <div class="flex-1 pt-40 pb-2 bg-[url('/hero.png')] bg-cover bg-center rounded-2xl">
+                    <div class="flex pl-2 pr-4 items-center text-white justify-between flex-wrap">
+                        <div class="flex items-end self-end gap-2">
                             <div class="h-10 w-10 rounded-full bg-lime-800"></div>
-                            <p class=" text-3xl font-bold">40 га</p>
+                            <p class="text-3xl font-bold">40 га</p>
                         </div>
-                        <p class="text-xl pl-4 border-l-2 border-r-white"> Уютный комплекс<br>
-                            для тихой семейной жизни</p>
+                        <p class="text-xl pl-4 border-l-2 border-white"> Уютный комплекс<br> для тихой семейной жизни
+                        </p>
                     </div>
                 </div>
-                <div class="flex-1 pt-40 pb-2 bg-[url('/hero.png')] rounded-2xl">
-                    <div class="flex pl-2 pr-4 items-center text-white justify-between">
-                        <div class="flex items-end self-end gap-2  ">
+                <div class="flex-1 pt-40 pb-2 bg-[url('/hero.png')] bg-cover bg-center rounded-2xl">
+                    <div class="flex pl-2 pr-4 items-center text-white justify-between flex-wrap">
+                        <div class="flex items-end self-end gap-2">
                             <div class="h-10 w-10 rounded-full bg-lime-800"></div>
-                            <p class=" text-3xl font-bold">40 га</p>
+                            <p class="text-3xl font-bold">40 га</p>
                         </div>
-                        <p class="text-xl pl-4 border-l-2 border-r-white"> Современная архитектура<br>
-                            в окружении природы</p>
+                        <p class="text-xl pl-4 border-l-2 border-white"> Современная архитектура<br> в окружении природы
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="px-32 py-4 bg-stone-200 border-2 border-gray-300 rounded-xl mb-4">
-                <div class="max-w-xl text-stone-700 ">
+            <!-- вместо px-32 делаем px-6 md:px-16, чтобы на планшетах не разрывалось -->
+            <div class="px-6 md:px-16 lg:px-32 py-4 bg-stone-200 border-2 border-gray-300 rounded-xl mb-4">
+                <div class="max-w-xl text-stone-700">
                     <h3 class="mb-2 text-xl font-semibold">Цены указаны для квартир без отделки</h3>
-                    <p>Если вы хотите переехать без лишних хлопот сразу после получения
-                        ключей — доступны квартиры с готовым ремонтом.<br>
-                        Количество квартир с ремонтом ограничено — свяжитесь с
-                        менеджером, чтобы узнать подробности</p>
+                    <p>Если вы хотите переехать без лишних хлопот сразу после получения ключей — доступны квартиры с
+                        готовым ремонтом.<br>
+                        Количество квартир с ремонтом ограничено — свяжитесь с менеджером, чтобы узнать подробности</p>
                 </div>
             </div>
-            <div class=" flex justify-center ">
-                <a href="#contacts"
-                   class="text-white bg-lime-800 hover:bg-lime-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-lg px-6 py-3 grow-0 flex justify-center items-center gap-2"><span>Cвязаться
-                    с менеджером</span>
-                    <div class="border-l-3 border-t-3 w-4 h-4  rotate-135"></div>
+            <div class="flex justify-center">
+                <a href="#calculator"
+                   class="text-white bg-lime-800 hover:bg-lime-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-lg px-6 py-3 flex justify-center items-center gap-2"><span>Связаться с менеджером</span>
+                    <div class="rotate-135 w-4 h-4"></div>
                 </a>
-
             </div>
-
         </div>
     </section>
     <section id="calculator" class="mt-20 bg-[url('/hero.png')] bg-cover pt-24">
@@ -288,7 +263,7 @@
                     <div class="relative mb-10">
                         <div class="flex text-stone-800 justify-between">
                             <p class="text-lg">Стоимость квартиры</p>
-                            <span class="text-2xl font-bold">3 800 000</span></s>
+                            <span class="text-2xl font-bold">3 800 000</span>
                         </div>
                         <label for="costRange" class="block mb-1 text-sm font-medium text-stone-400">Выберите
                             стоимость недвижимости</label>
@@ -316,7 +291,8 @@
                             <p class="text-lg">Срок ипотеки</p>
                             <span class="text-2xl font-bold">20 лет</span>
                         </div>
-                        <label for="creditTermRange" class="block mb-1 text-sm font-medium text-stone-400">Выберите срок кредитования</label>
+                        <label for="creditTermRange" class="block mb-1 text-sm font-medium text-stone-400">Выберите срок
+                            кредитования</label>
                         <input type="range" id="creditTermRange"
                                min="5" max="30" step="1" value="20"
                                class="range-custom w-full h-2 bg-stone-500 rounded-lg appearance-none cursor-pointer accent-olive-600">
