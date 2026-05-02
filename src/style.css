@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
+@import "flowbite/src/themes/default.css";
+
+@plugin "flowbite/plugin";
+
+@source "../node_modules/flowbite";
+@source "../node_modules/flowbite/src";
 
 @theme {
     --font-sans: Inter, sans-serif;
     --font-serif: 'PT Serif', serif;
 }
 
-
-@plugin "flowbite/plugin";
-
-@source "../node_modules/flowbite";
-
 @theme {
-    --color-olive-600: #565825
+    --color-olive-600: #565825;
+}
+
+.range-custom::-webkit-slider-thumb {
+    background: #746047 !important;
+    border: 2px solid white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }

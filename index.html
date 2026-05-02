@@ -4,7 +4,10 @@
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <link href="/src/style.css" rel="stylesheet">
+
+
     <title>onix</title>
 </head>
 <body class="font-serif bg-stone-100 ">
@@ -34,15 +37,15 @@
             </div>
 
             <!-- Меню - скрыто на экранах МЕНЬШЕ 1024px, показывается на 1024px и выше -->
-            <div class="hidden  text-lg w-full lg:flex lg:w-auto" id="navbar-sticky">
-                <ul class="flex absolute border-t border-t-gray-300 lg:border-none  w-full left-0 lg:static flex-col p-4 mt-4 font-medium  lg:flex-row  lg:mt-0 lg:p-0">
+            <div class="hidden   text-lg w-full lg:flex lg:w-auto" id="navbar-sticky">
+                <ul class="flex absolute border-t border-t-gray-300 bg-stone-100 lg:border-none  w-full left-0 lg:static flex-col p-4 mt-4 font-medium  lg:flex-row  lg:mt-0 lg:p-0">
                     <li><a href="#conception"
                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-green-700">О
                         проекте</a></li>
-                    <li><a href="#calculator"
+                    <li><a href="#construction"
                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-green-700">Планировка</a>
                     </li>
-                    <li><a href="#construction"
+                    <li><a href="#calculator"
                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-green-700">Ипотека</a>
                     </li>
                     <li><a href="#contacts"
@@ -149,7 +152,7 @@
 
 
             </div>
-            <div class="flex gap-1 text-sm text-white">
+            <div class="flex gap-2 text-sm text-white">
                 <article class="flex-1 bg-[url('/hero.png')] px-1 pb-4 rounded-2xl pt-16 ">
                     <h3 class="mb-2 font-bold">Соседство с лесом</h3>
                     <p class="mb-2">Через микрорайон проходит
@@ -210,7 +213,123 @@
                 </article>
             </div>
         </div>
+    </section>
+    <section id="construction" class="mt-10">
+        <div class="max-w-4xl mx-auto ">
+            <div class="flex flex-col items-center justify-between mb-4">
+                <h2 class="text-lime-800 max-w-2xl   text-6xl mb-2">
+                    Выбирайте квартиру под свой стиль жизни
+                </h2>
+                <p class="text-lg text-center">Мы создали пространства, где комфорт, природа и современные решения
+                    формируют идеальные условия для
+                    жизни вашей семьи</p>
+            </div>
+            <div class="flex justify-between gap-10 mb-12">
+                <div class="flex-1 pt-40 pb-2 bg-[url('/hero.png')] rounded-2xl">
+                    <div class="flex pl-2 pr-4 items-center  text-white justify-between">
+                        <div class="flex items-end self-end  gap-2  ">
+                            <div class="h-10 w-10 rounded-full bg-lime-800"></div>
+                            <p class=" text-3xl font-bold">40 га</p>
+                        </div>
+                        <p class="text-xl pl-4 border-l-2 border-r-white"> Уютный комплекс<br>
+                            для тихой семейной жизни</p>
+                    </div>
+                </div>
+                <div class="flex-1 pt-40 pb-2 bg-[url('/hero.png')] rounded-2xl">
+                    <div class="flex pl-2 pr-4 items-center text-white justify-between">
+                        <div class="flex items-end self-end gap-2  ">
+                            <div class="h-10 w-10 rounded-full bg-lime-800"></div>
+                            <p class=" text-3xl font-bold">40 га</p>
+                        </div>
+                        <p class="text-xl pl-4 border-l-2 border-r-white"> Современная архитектура<br>
+                            в окружении природы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="px-32 py-4 bg-stone-200 border-2 border-gray-300 rounded-xl mb-4">
+                <div class="max-w-xl text-stone-700 ">
+                    <h3 class="mb-2 text-xl font-semibold">Цены указаны для квартир без отделки</h3>
+                    <p>Если вы хотите переехать без лишних хлопот сразу после получения
+                        ключей — доступны квартиры с готовым ремонтом.<br>
+                        Количество квартир с ремонтом ограничено — свяжитесь с
+                        менеджером, чтобы узнать подробности</p>
+                </div>
+            </div>
+            <div class=" flex justify-center ">
+                <a href="#contacts"
+                   class="text-white bg-lime-800 hover:bg-lime-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-lg px-6 py-3 grow-0 flex justify-center items-center gap-2"><span>Cвязаться
+                    с менеджером</span>
+                    <div class="border-l-3 border-t-3 w-4 h-4  rotate-135"></div>
+                </a>
 
+            </div>
+
+        </div>
+    </section>
+    <section id="calculator" class="mt-20 bg-[url('/hero.png')] bg-cover pt-24">
+        <div class="pt-6 max-w-6xl mx-auto px-10  bg-stone-100 rounded-xl">
+            <h2 class="text-lime-800 text-center   text-5xl mb-2">Ипотечный калькулятор</h2>
+            <p class="text-lime-800 text-center mb-8">Рассчитайте комфортный платеж по ипотеке на вашу будущую
+                квартиру</p>
+
+            <div class="flex">
+                <div>
+                    <div class="flex gap-4 mb-8">
+                        <button
+                                class="text-white bg-lime-800 hover:bg-lime-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-2xl text-lg px-6 py-2 min-w-64">
+                            Льготная - 5,9%
+                        </button>
+                        <button
+                                class="bg-stone-100 hover:bg-stone-200 focus:ring-4  border-2 border-gray-300 focus:ring-stone-300 font-medium rounded-2xl text-lg px-6 py-2 text-center min-w-64">
+                            Льготная - 5,9%
+                        </button>
+                    </div>
+
+                    <div class="relative mb-10">
+                        <div class="flex text-stone-800 justify-between">
+                            <p class="text-lg">Стоимость квартиры</p>
+                            <span class="text-2xl font-bold">3 800 000</span></s>
+                        </div>
+                        <label for="costRange" class="block mb-1 text-sm font-medium text-stone-400">Выберите
+                            стоимость недвижимости</label>
+                        <input type="range" id="costRange"
+                               min="1000000" max="15000000" step="100000" value="7500000"
+                               class="range-custom w-full h-2 bg-stone-500 rounded-lg appearance-none cursor-pointer accent-olive-600">
+                        <span class="text-sm  absolute inset-s-0 -bottom-6 text-stone-400">1 000 000 ₽</span>
+                        <span class="text-sm  absolute inset-e-0 -bottom-6 text-stone-400">15 000 000 ₽</span>
+                    </div>
+                    <div class="relative mb-10">
+                        <div class="flex text-stone-800 justify-between">
+                            <p class="text-lg">Первоначальный взнос</p>
+                            <span class="text-2xl font-bold">760 000 ₽ (20%)</span>
+                        </div>
+                        <label for="initialPaymentRange" class="block mb-1 text-sm font-medium text-stone-400">От 10% до
+                            50% стоимости квартиры</label>
+                        <input type="range" id="initialPaymentRange"
+                               min="10" max="50" step="1" value="20"
+                               class="range-custom w-full h-2 bg-stone-500 rounded-lg appearance-none cursor-pointer accent-olive-600">
+                        <span class="text-sm  absolute inset-s-0 -bottom-6 text-stone-400">10%</span>
+                        <span class="text-sm  absolute inset-e-0 -bottom-6 text-stone-400">50%</span>
+                    </div>
+                    <div class="relative mb-10">
+                        <div class="flex text-stone-800 justify-between">
+                            <p class="text-lg">Срок ипотеки</p>
+                            <span class="text-2xl font-bold">20 лет</span>
+                        </div>
+                        <label for="creditTermRange" class="block mb-1 text-sm font-medium text-stone-400">Выберите срок кредитования</label>
+                        <input type="range" id="creditTermRange"
+                               min="5" max="30" step="1" value="20"
+                               class="range-custom w-full h-2 bg-stone-500 rounded-lg appearance-none cursor-pointer accent-olive-600">
+                        <span class="text-sm  absolute inset-s-0 -bottom-6 text-stone-400">5 лет</span>
+                        <span class="text-sm  absolute inset-e-0 -bottom-6 text-stone-400">30 лет</span>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
     </section>
 </main>
 
