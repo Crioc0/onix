@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link href="/src/style.css" rel="stylesheet">
 
@@ -11,13 +12,13 @@
     <title>onix</title>
 </head>
 <body class="font-sans bg-stone-100 ">
-<header class="p-4  sm:px-10 sticky top-0 left-0 w-full z-50 bg-stone-100 backdrop-blur-sm border-b border-gray-200">
+<header class="px-4 py-0.5 sm:px-10 sticky top-0 left-0 w-full z-50 bg-stone-100 backdrop-blur-sm border-b border-gray-200">
     <nav class=" border-gray-200 dark:bg-gray-900">
         <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto ">
 
             <div class="flex gap-2 md:gap-16 items-center">
                 <a href="#" class="flex items-center space-x-3">
-                    <img src="./src/assets/logo-oniks.svg" class="max-h-10" alt="Оникс">
+                    <img src="./src/assets/logo-oniks.svg" class="max-h-16" alt="Оникс">
                 </a>
                 <span class="text-2xl md:text-4xl text-olive-600 font-serif">мкр. ДУБРАВА</span>
             </div>
@@ -62,7 +63,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="p-2 max-w-lg bg-gray-100/30 rounded-3xl">
                 <div class="py-6 px-9 bg-gray-100/70 rounded-3xl">
-                    <h1 class="text-4xl mb-2 font-serif">Современная городская среда в окружении леса</h1>
+                    <h1 class="text-4xl mb-2 font-lora">Современная городская среда в окружении леса</h1>
                     <p class="text-lg mb-2">Квартиры от 115 000 ₽/м² - 20 мин до центра города</p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#conception"
@@ -107,8 +108,8 @@
                         <div class="w-4 h-4 bg-green-200"></div>
                         <p class="text-lime-700">КОНЦЕПЦИЯ</p>
                     </div>
-                    <div class="max-w-md mb-4">
-                        <h2 class="text-lime-800 text-6xl mb-2 font-serif">«Солнечный<br> город в городе»</h2>
+                    <div class="max-w-lg mb-4">
+                        <h2 class="text-title-green text-6xl mb-2 font-lora">«Солнечный<br> город в&#160городе»</h2>
                         <p>Микрорайон «Дубрава» - современный жилой квартал в экологически чистом районе Репное,
                             объединяющее комфорт городской среды и транспортную доступность в окружении леса.</p>
                     </div>
@@ -148,13 +149,13 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 place-items-stretch lg:place-items-stretch gap-3 text-sm text-white mt-4">
-                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 min-h-60">
+                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 flex flex-col justify-end min-h-60 inner-shadow">
                     <h3 class="mb-2 font-bold">Соседство с лесом</h3>
-                    <p class="mb-2">Через микрорайон проходит «Зеленая коса» - единый прогулочный маршрут длиной более 2
+                    <p class="mb-2 text-sm">Через микрорайон проходит «Зеленая коса» - единый прогулочный маршрут длиной более 2
                         км.</p>
                     <p>Вы можете гулять, бегать, кататься на велосипеде — не выходя за пределы района.</p>
                 </article>
-                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 min-h-60">
+                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 flex flex-col justify-end min-h-60 inner-shadow">
                     <h3 class="mb-2 font-bold whitespace-normal">Дворы и благоустройство</h3>
                     <ul class="list-disc pl-5">
                         <li>безопасные дворы без лишнего транспорта</li>
@@ -163,26 +164,26 @@
                         <li>45% территории - озеленение</li>
                     </ul>
                 </article>
-                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 min-h-60">
+                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 flex flex-col justify-end min-h-60 inner-shadow">
                     <h3 class="mb-2 font-bold">Архитектура</h3>
-                    <p class="mb-2">Современные жилые дома попеременной этажности (4-6-8 этажей) формируют уютную и
+                    <p class="mb-2 text-sm">Современные жилые дома попеременной этажности (4-6-8 этажей) формируют уютную и
                         живую среду.</p>
                     <p>Расположение домов тщательно продуманно с учетом уклона и ориентированно на восток. Каждое утро
                         здесь начинается со света.</p>
                 </article>
-                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 min-h-60">
+                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 flex flex-col justify-end min-h-60 inner-shadow">
                     <h3 class="mb-2 font-bold">Общественные места</h3>
-                    <p class="mb-2">"Белая река" - основная артерия микрорайона, объединяющая систему улицы и площадей в
+                    <p class="mb-2 text-sm">"Белая река" - основная артерия микрорайона, объединяющая систему улицы и площадей в
                         единое городское пространство</p>
-                    <p>Торцы и фасады домов, выходящие, на "Белую реку", имеют белый цвет, таким образом, дома и мощение
+                    <p class="text-sm">Торцы и фасады домов, выходящие, на "Белую реку", имеют белый цвет, таким образом, дома и мощение
                         образуют единое белоснежное пространство, контрастирующее с остальной архитектурой и окружением,
                         выделяя главное.</p>
                 </article>
-                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 min-h-60">
+                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 flex flex-col justify-end min-h-60 inner-shadow">
                     <h3 class="mb-2 font-bold">Соседство с лесом</h3>
-                    <p class="mb-2">Через микрорайон проходит «Зеленая коса» - единый прогулочный маршрут длиной более 2
+                    <p class="mb-2 text-sm">Через микрорайон проходит «Зеленая коса» - единый прогулочный маршрут длиной более 2
                         км.</p>
-                    <p>Вы можете гулять, бегать, кататься на велосипеде — не выходя за пределы района.</p>
+                    <p class="text-sm">Вы можете гулять, бегать, кататься на велосипеде — не выходя за пределы района.</p>
                 </article>
             </div>
         </div>
@@ -191,7 +192,7 @@
     <section id="construction" class="mt-10 px-4">
         <div class="max-w-4xl mx-auto">
             <div class="flex flex-col items-center justify-between mb-4 text-center">
-                <h2 class="text-lime-800 max-w-2xl text-4xl md:text-6xl mb-2 leading-tight">Выбирайте квартиру под свой
+                <h2 class="text-title-green font-lora max-w-2xl text-4xl md:text-6xl mb-2 leading-tight ">Выбирайте квартиру под свой
                     стиль жизни</h2>
                 <p class="text-lg text-center">Мы создали пространства, где комфорт, природа и современные решения
                     формируют идеальные условия для жизни вашей семьи</p>
@@ -236,14 +237,14 @@
     </section>
     <section id="calculator" class="mt-20 px-2 bg-[url('/hero.png')] bg-cover py-12 sm:py-16 md:py-24">
         <div class="py-4 sm:py-6 max-w-3xl lg:max-w-6xl w-full mx-auto px-4 sm:px-6 md:px-10 bg-stone-100 rounded-xl">
-            <h2 class="text-lime-800 text-center text-3xl sm:text-4xl md:text-5xl mb-2">Ипотечный калькулятор</h2>
+            <h2 class="text-title-green font-lora text-center text-3xl sm:text-4xl md:text-5xl mb-2">Ипотечный калькулятор</h2>
             <p class="text-lime-800 text-center mb-6 sm:mb-8 text-sm sm:text-base">Рассчитайте комфортный платеж по
                 ипотеке на вашу будущую
                 квартиру</p>
 
             <div class="flex gap-6 md:gap-8 flex-wrap justify-center">
                 <div class="flex-1 min-w-70">
-                    <div class="flex flex-col sm:flex-col gap-4 mb-8">
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
                         <button
                                 class="text-white bg-lime-800 hover:bg-lime-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-2xl text-base sm:text-lg px-4 sm:px-6 py-2 min-w-45 sm:min-w-64 lg:min-w">
                             Льготная - 5,9%
@@ -340,7 +341,7 @@
     </section>
     <section id="construction_progress" class="px-2 mt-20">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-lime-800 text-3xl sm:text-4xl md:text-5xl mb-4">Ход строительства</h2>
+            <h2 class="text-title-green font-lora text-3xl sm:text-4xl md:text-5xl mb-4">Ход строительства</h2>
             <p class="text-lime-800 mb-6 sm:mb-8 text-lg sm:text-base">Строительство ведется по графику</p>
             <div class="flex flex-col lg:flex-row gap-4 mb-10">
                 <article class="flex-1 relative border border-gray-300 rounded p-3">
@@ -370,7 +371,7 @@
     <section id="contacts" class="mt-20 bg-[url('/conception-main.png')]  bg-cover bg-no-repeat px-2  py-12 sm:py-16 md:py-24">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="bg-stone-200 p-8 rounded-xl">
-                <h3 class="text-3xl mb-2">Свяжитесь с нами<br> удобным образом</h3>
+                <h3 class="text-3xl font-lora mb-2">Свяжитесь с нами<br> удобным образом</h3>
                 <div class="bg-stone-100 p-4 rounded-xl flex flex-col gap-2">
                     <div class="flex gap-2 items-center">
                         <span class="w-8 h-8 rounded-full bg-stone-400"></span>
@@ -410,7 +411,7 @@
                 </div>
             </div>
             <div class="bg-stone-200 p-8 rounded-xl">
-                <h3 class="text-3xl mb-2">Подберем квартиру <br> под ваш запрос</h3>
+                <h3 class="text-3xl mb-2 font-lora">Подберем квартиру <br> под ваш запрос</h3>
                 <form action="">
                     <label for="phone-input" class="hidden">Телефонный номер</label>
                     <div class="relative mb-2">
