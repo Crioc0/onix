@@ -12,7 +12,7 @@
     <title>onix</title>
 </head>
 <body class="font-sans bg-stone-100 ">
-<header class="px-4 py-0.5 sm:px-10 sticky top-0 left-0 w-full z-50 bg-stone-100 backdrop-blur-sm border-b border-gray-200">
+<header class="px-4 py-0.5 sm:px-10 min-h- sticky top-0 left-0 w-full z-50 bg-stone-100 backdrop-blur-sm border-b border-gray-200">
     <nav class=" border-gray-200 dark:bg-gray-900">
         <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto ">
 
@@ -38,8 +38,8 @@
             </div>
 
             <!-- Меню - скрыто на экранах МЕНЬШЕ 1024px, показывается на 1024px и выше -->
-            <div class="hidden   text-lg w-full lg:flex lg:w-auto" id="navbar-sticky">
-                <ul class="flex absolute border-t border-t-gray-300 bg-stone-100 lg:border-none  w-full left-0 lg:static flex-col p-4 mt-4   lg:flex-row  lg:mt-0 lg:p-0">
+            <div class="hidden absolute left-0 top-13    text-lg w-full lg:flex lg:w-auto" id="navbar-sticky">
+                <ul class="flex  border-t border-t-gray-300 bg-stone-100 lg:border-none  w-full left-0 lg:static flex-col p-4 mt-4   lg:flex-row  lg:mt-0 lg:p-0">
                     <li><a href="#conception"
                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-green-700">О
                         проекте</a></li>
@@ -81,19 +81,19 @@
     <section id="advantages" class="p-4 bg-lime-800">
         <div class="max-w-full sm:max-w-11/12 lg:max-w-7xl  mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 gap-x-24 lg:gap-2">
             <div class="flex items-center gap-8 lg:gap-2 sm:justify-start lg:justify-center">
-                <div class="w-8 h-8 bg-white shrink-0"></div>
+                <img class="w-8 h-8 shrink-0" src="./src/assets/icons/1.svg" alt="">
                 <p class=" text-xl  text-stone-200 xl:text-nowrap">Разноэтажное строительство</p>
             </div>
             <div class="flex items-center gap-8 lg:gap-2 sm:justify-start lg:justify-center">
-                <div class="w-8 h-8 bg-white shrink-0"></div>
+                <img class="w-8 h-8 shrink-0" src="./src/assets/icons/2.svg" alt="">
                 <p class=" text-xl  text-stone-200 xl:text-nowrap">Природа вокруг</p>
             </div>
             <div class="flex items-center gap-8 lg:gap-2 sm:justify-start lg:justify-center">
-                <div class="w-8 h-8 bg-white shrink-0"></div>
+                <img class="w-8 h-8 shrink-0" src="./src/assets/icons/3.svg" alt="">
                 <p class=" text-xl  text-stone-200 xl:text-nowrap">Разнообразные планировки</p>
             </div>
             <div class="flex items-center gap-8 lg:gap-2 sm:justify-start lg:justify-center">
-                <div class="w-8 h-8 bg-white shrink-0"></div>
+                <img class="w-8 h-8 shrink-0" src="./src/assets/icons/4.svg" alt="">
                 <p class=" text-xl  text-stone-200 xl:text-nowrap">Инфраструктура</p>
             </div>
         </div>
@@ -105,7 +105,11 @@
             <div class="flex flex-col lg:flex-row justify-between gap-6 pb-4">
                 <div class="py-6 lg:py-10">
                     <div class="flex gap-2 items-center">
-                        <div class="w-4 h-4 bg-green-200"></div>
+                        <div class="w-8 h-8 ">
+                            <img
+                                    src="./src/assets/icons/5.svg"
+                                    alt="">
+                        </div>
                         <p class="text-lime-700">КОНЦЕПЦИЯ</p>
                     </div>
                     <div class="max-w-lg mb-4">
@@ -116,7 +120,11 @@
                     <!-- три блока: на мобильных в колонку, но стили те же -->
                     <div class="flex flex-col sm:flex-row gap-5">
                         <div class="flex items-start gap-2">
-                            <div class="w-10 h-10 rounded-full bg-stone-200 shrink-0"></div>
+                            <div class="w-11 p-2  grid place-items-center h-11 rounded-full bg-stone-200 shrink-0">
+                                <img
+                                        src="./src/assets/icons/6.svg"
+                                        alt="">
+                            </div>
                             <div>
                                 <h3 class="text-lime-800">Продуманная среда для жизни</h3>
                                 <p class="text-sm">Спортивные и детские площадки, прогулочные маршруты «Зеленая коса» и
@@ -124,7 +132,11 @@
                             </div>
                         </div>
                         <div class="flex items-start gap-2">
-                            <div class="w-10 h-10 rounded-full bg-stone-200 shrink-0"></div>
+                            <div class="w-11 p-2  grid place-items-center h-11 rounded-full bg-stone-200 shrink-0">
+                                <img class="bg-inherit"
+                                     src="./src/assets/icons/7.svg"
+                                     alt="">
+                            </div>
                             <div>
                                 <h3 class="text-lime-800">Солнечная архитектура</h3>
                                 <p class="text-sm">Этажность и расположение домов продуманы с учетом рельефа и движения
@@ -132,7 +144,11 @@
                             </div>
                         </div>
                         <div class="flex items-start gap-2">
-                            <div class="w-10 h-10 rounded-full bg-stone-200 shrink-0"></div>
+                            <div class="w-11 p-2  grid place-items-center h-11 rounded-full bg-stone-200 shrink-0">
+                                <img
+                                        src="./src/assets/icons/8.svg"
+                                        alt="">
+                            </div>
                             <div>
                                 <h3 class="text-lime-800">Удобная транспортная доступность</h3>
                                 <p class="text-sm">Спортивные и детские площадки, прогулочные маршруты «Зеленая коса» и
@@ -149,13 +165,16 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 place-items-stretch lg:place-items-stretch gap-3 text-sm text-white mt-4">
-                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 flex flex-col justify-end min-h-60 inner-shadow">
+                <article
+                        class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 flex flex-col justify-end min-h-60 inner-shadow">
                     <h3 class="mb-2 font-bold">Соседство с лесом</h3>
-                    <p class="mb-2 text-sm">Через микрорайон проходит «Зеленая коса» - единый прогулочный маршрут длиной более 2
+                    <p class="mb-2 text-sm">Через микрорайон проходит «Зеленая коса» - единый прогулочный маршрут длиной
+                        более 2
                         км.</p>
                     <p>Вы можете гулять, бегать, кататься на велосипеде — не выходя за пределы района.</p>
                 </article>
-                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 flex flex-col justify-end min-h-60 inner-shadow">
+                <article
+                        class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 flex flex-col justify-end min-h-60 inner-shadow">
                     <h3 class="mb-2 font-bold whitespace-normal">Дворы и благоустройство</h3>
                     <ul class="list-disc pl-5">
                         <li>безопасные дворы без лишнего транспорта</li>
@@ -164,26 +183,34 @@
                         <li>45% территории - озеленение</li>
                     </ul>
                 </article>
-                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 flex flex-col justify-end min-h-60 inner-shadow">
+                <article
+                        class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 flex flex-col justify-end min-h-60 inner-shadow">
                     <h3 class="mb-2 font-bold">Архитектура</h3>
-                    <p class="mb-2 text-sm">Современные жилые дома попеременной этажности (4-6-8 этажей) формируют уютную и
+                    <p class="mb-2 text-sm">Современные жилые дома попеременной этажности (4-6-8 этажей) формируют
+                        уютную и
                         живую среду.</p>
                     <p>Расположение домов тщательно продуманно с учетом уклона и ориентированно на восток. Каждое утро
                         здесь начинается со света.</p>
                 </article>
-                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 flex flex-col justify-end min-h-60 inner-shadow">
+                <article
+                        class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 flex flex-col justify-end min-h-60 inner-shadow">
                     <h3 class="mb-2 font-bold">Общественные места</h3>
-                    <p class="mb-2 text-sm">"Белая река" - основная артерия микрорайона, объединяющая систему улицы и площадей в
+                    <p class="mb-2 text-sm">"Белая река" - основная артерия микрорайона, объединяющая систему улицы и
+                        площадей в
                         единое городское пространство</p>
-                    <p class="text-sm">Торцы и фасады домов, выходящие, на "Белую реку", имеют белый цвет, таким образом, дома и мощение
+                    <p class="text-sm">Торцы и фасады домов, выходящие, на "Белую реку", имеют белый цвет, таким
+                        образом, дома и мощение
                         образуют единое белоснежное пространство, контрастирующее с остальной архитектурой и окружением,
                         выделяя главное.</p>
                 </article>
-                <article class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 flex flex-col justify-end min-h-60 inner-shadow">
+                <article
+                        class="bg-[url('/hero.png')] bg-cover bg-center px-3 pb-4 rounded-2xl pt-16 flex flex-col justify-end min-h-60 inner-shadow">
                     <h3 class="mb-2 font-bold">Соседство с лесом</h3>
-                    <p class="mb-2 text-sm">Через микрорайон проходит «Зеленая коса» - единый прогулочный маршрут длиной более 2
+                    <p class="mb-2 text-sm">Через микрорайон проходит «Зеленая коса» - единый прогулочный маршрут длиной
+                        более 2
                         км.</p>
-                    <p class="text-sm">Вы можете гулять, бегать, кататься на велосипеде — не выходя за пределы района.</p>
+                    <p class="text-sm">Вы можете гулять, бегать, кататься на велосипеде — не выходя за пределы
+                        района.</p>
                 </article>
             </div>
         </div>
@@ -192,7 +219,8 @@
     <section id="construction" class="mt-10 px-4">
         <div class="max-w-4xl mx-auto">
             <div class="flex flex-col items-center justify-between mb-4 text-center">
-                <h2 class="text-title-green font-lora max-w-2xl text-4xl md:text-6xl mb-2 leading-tight ">Выбирайте квартиру под свой
+                <h2 class="text-title-green font-lora max-w-2xl text-4xl md:text-6xl mb-2 leading-tight ">Выбирайте
+                    квартиру под свой
                     стиль жизни</h2>
                 <p class="text-lg text-center">Мы создали пространства, где комфорт, природа и современные решения
                     формируют идеальные условия для жизни вашей семьи</p>
@@ -200,26 +228,41 @@
             <div class="flex flex-col md:flex-row justify-between gap-6 md:gap-10 mb-12">
                 <div class="flex-1 pt-40 pb-2 bg-[url('/hero.png')] bg-cover bg-center rounded-2xl">
                     <div class="flex flex-col lg:flex-row pl-2 pr-4 lg:items-center text-white gap-2 md:justify-between flex-wrap">
-                        <div class="flex items-end ld:self-end gap-2">
-                            <div class="h-10 w-10 rounded-full bg-lime-800"></div>
+                        <div class="flex items-end ld:self-end gap-1">
+                            <div class="grid place-items-center h-12 w-12 p-1 rounded-full bg-lime-800">
+                                <img
+                                        src="./src/assets/icons/10.svg"
+                                        alt="">
+                            </div>
                             <p class="text-3xl font-bold">40 га</p>
                         </div>
-                        <p class="text-xl lg:pl-2 xs:pl-4 lg:border-l-2 border-white"> Уютный комплекс<br> для тихой семейной жизни
+                        <p class="text-xl lg:pl-2 xs:pl-4 lg:border-l-2 border-white"> Уютный комплекс<br> для тихой
+                            семейной жизни
                         </p>
                     </div>
                 </div>
                 <div class="flex-1 pt-40 pb-2 bg-[url('/hero.png')] bg-cover bg-center rounded-2xl">
                     <div class="flex flex-col lg:flex-row pl-2 pr-4 lg:items-center text-white gap-2 md:justify-between flex-wrap">
-                        <div class="flex items-end lg:self-end gap-2">
-                            <div class="h-10 w-10 rounded-full bg-lime-800"></div>
+                        <div class="flex items-end lg:self-end gap-1">
+                            <div class="grid place-items-center h-12 w-12 p-2 rounded-full bg-lime-800">
+                                <img
+                                        src="./src/assets/icons/11.svg"
+                                        alt="">
+                            </div>
                             <p class="text-3xl font-bold">40 га</p>
                         </div>
-                        <p class="text-xl lg:pl-2 xs:pl-4 lg:border-l-2 border-white"> Современная архитектура<br> в окружении природы
+                        <p class="text-xl lg:pl-2 xs:pl-4 lg:border-l-2 border-white"> Современная архитектура<br> в
+                            окружении природы
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="px-6 md:px-16 lg:px-32 py-4 bg-stone-200 border-2 border-gray-300 rounded-xl mb-4">
+            <div class="px-6 flex py-4 gap-8 bg-stone-200 border-2 border-gray-300 rounded-xl mb-4 bg-cover ">
+                <div class="grid place-items-center w-14 h-14 sm:w-18 sm:h-18 p-3 bg-stone-100 rounded-full shrink-0">
+                    <img
+                            src="./src/assets/icons/12.svg"
+                            alt="">
+                </div>
                 <div class="max-w-xl text-stone-700">
                     <h3 class="mb-2 text-xl font-semibold">Цены указаны для квартир без отделки</h3>
                     <p>Если вы хотите переехать без лишних хлопот сразу после получения ключей — доступны квартиры с
@@ -237,7 +280,8 @@
     </section>
     <section id="calculator" class="mt-20 px-2 bg-[url('/hero.png')] bg-cover py-12 sm:py-16 md:py-24">
         <div class="py-4 sm:py-6 max-w-3xl lg:max-w-6xl w-full mx-auto px-4 sm:px-6 md:px-10 bg-stone-100 rounded-xl">
-            <h2 class="text-title-green font-lora text-center text-3xl sm:text-4xl md:text-5xl mb-2">Ипотечный калькулятор</h2>
+            <h2 class="text-title-green font-lora text-center text-3xl sm:text-4xl md:text-5xl mb-2">Ипотечный
+                калькулятор</h2>
             <p class="text-lime-800 text-center mb-6 sm:mb-8 text-sm sm:text-base">Рассчитайте комфортный платеж по
                 ипотеке на вашу будущую
                 квартиру</p>
@@ -315,14 +359,22 @@
                     </div>
                     <div class="flex flex-col sm:flex-row justify-around w-full gap-4 mb-4">
                         <div class="flex items-center gap-2 justify-center sm:justify-start">
-                            <div class="w-8 h-8 sm:w-10 sm:h-10 bg-stone-200 rounded-full shrink-0"></div>
+                            <div class="grid place-items-center w-10 h-10 p-1 sm:p-2 bg-stone-200 rounded-full shrink-0">
+                                <img
+                                        src="./src/assets/icons/13.svg"
+                                        alt="">
+                            </div>
                             <div>
                                 <div class="text-stone-400 text-xs sm:text-sm">Сумма кредита</div>
                                 <div class="text-xl sm:text-2xl font-semibold">3 040 000 ₽</div>
                             </div>
                         </div>
                         <div class="flex items-center gap-2 justify-center sm:justify-start">
-                            <div class="w-8 h-8 sm:w-10 sm:h-10 bg-stone-200 rounded-full shrink-0"></div>
+                            <div class="grid place-items-center  w-10 h-10 p-2 bg-stone-200 rounded-full shrink-0">
+                                <img
+                                        src="./src/assets/icons/14.svg"
+                                        alt="">
+                            </div>
                             <div>
                                 <div class="text-stone-400 text-xs sm:text-sm">Ставка</div>
                                 <div class="text-xl sm:text-2xl font-semibold">5,9 %</div>
@@ -368,7 +420,8 @@
 
         </div>
     </section>
-    <section id="contacts" class="mt-20 bg-[url('/conception-main.png')]  bg-cover bg-no-repeat px-2  py-12 sm:py-16 md:py-24">
+    <section id="contacts"
+             class="mt-20 bg-[url('/conception-main.png')]  bg-cover bg-no-repeat px-2  py-12 sm:py-16 md:py-24">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="bg-stone-200 p-8 rounded-xl">
                 <h3 class="text-3xl font-lora mb-2">Свяжитесь с нами<br> удобным образом</h3>
@@ -433,9 +486,11 @@
                                class="bg-neutral-secondary-medium border text-xl border-default-medium text-heading  rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-3.5 shadow-xs placeholder:text-body"
                                placeholder="Ваше имя"/>
                     </div>
-                    <p id="helper-text-explanation " class="text-[11px] sm:text-[12px] text-stone-400 text-center mb-2">Оставьте только номер - остальное
+                    <p id="helper-text-explanation " class="text-[11px] sm:text-[12px] text-stone-400 text-center mb-2">
+                        Оставьте только номер - остальное
                         уточним по телефону</p>
-                    <button type="submit" class="text-white w-full     bg-lime-800 hover:bg-lime-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-base sm:text-lg px-6 py-3  transition">
+                    <button type="submit"
+                            class="text-white w-full     bg-lime-800 hover:bg-lime-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-base sm:text-lg px-6 py-3  transition">
                         Записаться на просмотр
                     </button>
                 </form>
